@@ -1,0 +1,46 @@
+.footer {
+    padding: 64px 0;
+    background-color: $bg-footer;
+
+    &__wrapper {
+        margin-bottom: 32px;
+        .footer-title {
+            color: $white;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .footer__item {
+            margin-bottom: 16px;
+
+            &-link {
+                color: $text-footer;
+
+                &:hover {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    .divider {
+        height: 2px;
+        background-color: $divider-footer;
+        margin: 16px 0;
+    }
+
+    .slogan {
+        color: $text-footer;
+        margin-bottom: 16px;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: end;
+        gap: 32px;
+
+        &__item {
+            color: $text-footer;
+        }
+    }
+}

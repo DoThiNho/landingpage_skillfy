@@ -1,0 +1,53 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 16px 0;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 9;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &-title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+
+    &__nav {
+        flex: 1;
+        margin-left: 40px;
+        @media (max-width: $desktop) {
+            display: none;
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    @media (max-width: $desktop) {
+        .mobile-menu {
+            display: block;
+            &__icons {
+                display: flex;
+                gap: 16px;
+            }
+
+            &__icon {
+                cursor: pointer;
+            }
+        }
+    }
+}

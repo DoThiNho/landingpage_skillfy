@@ -1,0 +1,50 @@
+.products {
+    .filter-text {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 24px;
+        margin: 0 auto;
+        border: 1px solid $text-color;
+        border-radius: 5px;
+        color: $text-color;
+        cursor: pointer;
+    }
+
+    .product-filter {
+
+        &__items {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            overflow-x: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__item {
+            padding: 16px;
+            background-color: $main-bg;
+            color: $text-color;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+
+    .product-card__wrapper {
+        .product-card {
+            margin-top: 24px;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        .product-filter {
+            &__item {
+                margin: 32px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.slider-wrapper {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: auto;
+        gap: 28px;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .deals {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: auto;
+        gap: 18px;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .btn-direction {
+            background-color: $white;
+            color: $name-color;
+        }
+
+        .progress {
+            position: relative;
+            width: 100%;
+            margin: 0 8px;
+            height: 5px;
+            &__bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 100%;
+                background-color: $bg-progress;
+            }
+        }
+    }
+}

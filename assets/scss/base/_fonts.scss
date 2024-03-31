@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100 900;
+    src: url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLPTedw.ttf') format('truetype'), /* Thin */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfedw.ttf') format('truetype'), /* Light */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGTedw.ttf') format('truetype'), /* Regular */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDTedw.ttf') format('truetype'), /* Medium */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBTedw.ttf') format('truetype'), /* SemiBold */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLETedw.ttf') format('truetype'), /* Bold */
+         url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFTedw.ttf') format('truetype'); /* ExtraBold */
+}
+
+$system-font: Poppins

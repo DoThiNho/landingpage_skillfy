@@ -1,0 +1,63 @@
+.teacher__card {
+    position: relative;
+    display: flex;
+    align-items: end;
+    border: 1px solid $text-color;
+    padding: 16px;
+    margin-top: 150px;
+    height: 350px;
+
+    .teacher__img {
+        position: absolute;
+        top: -45px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60%;
+        width: 90%;
+
+        img {
+            position: absolute;
+            z-index: 2;
+            top: -61px;
+            left: -32px;
+            height: 270px;
+            filter: drop-shadow(16px 0px 32px #00000080)
+        }
+    }
+
+    .box-green {
+        background-color: $bg-box-green;
+    }
+    
+    .box-purple {
+        background-color: $bg-box-purple;
+    }
+    
+    .box-orange {
+        background-color: $bg-box-orange;
+    }
+
+    .box-yellow {
+        background-color: $bg-box-yellow;
+    }
+
+    .box-red {
+        background-color: $bg-box-red;
+    }
+
+    .box-grey {
+        background-color: $bg-box-grey;
+    }
+
+    .teacher__text {
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .intro {
+            margin-top: 16px;
+            line-height: 2;
+            color: $text-color;
+        }
+    }
+}

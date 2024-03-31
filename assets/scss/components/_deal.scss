@@ -1,0 +1,78 @@
+.deal {
+    min-width: $min-width-deal;
+    position: relative;
+    
+    &__content  {
+        background-color: $white;
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+        padding-top: 90px;
+        margin-bottom: 16px;
+    
+        .deal__info {
+            position: absolute;
+            top: 32px;
+            padding: 0 32px;
+            width: 80%;
+    
+            .text-title {
+                color: $text-color;
+                margin-bottom: 16px;
+            }
+    
+            .text-description {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+        }
+
+        .deal__img {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: -50px;
+            z-index: 2;
+        }
+    
+        .shape {
+            .box {
+                width: 100%;
+                height: 40%;
+                position: absolute;
+                bottom: 0;
+                background-color: $bg-shape;
+            }
+        }
+    }
+
+    .total-count {
+        position: absolute;
+        left: -16px;
+        bottom: 32px;
+        padding: 16px;
+        color: $white;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 2;
+
+        .number-percent {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    .bg-brown {
+        background-color: $bg-box-brown;
+    }
+
+    .bg-blue {
+        background-color: $bg-box-blue;
+    }
+    
+    .bg-red {
+        background-color: $bg-box-red;
+    }
+    
+}

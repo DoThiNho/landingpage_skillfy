@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillfy</title>
+    <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <img class="header__logo-image" src="./assets/images/header/logo.jpg" alt="" />
+                    <span class="header__logo-title">Skillfy</span>
+                </div>
+                <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Home</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Pages</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Courses</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Features</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Blog</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Stop</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
+                            <li class="nav__item">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </li>
+                            <li class="nav__item">
+                                <div class="user">
+                                    <img src="./assets/images/header/avatar.jpg" alt=""/>
+                                    <div class="user__info">
+                                        <span class="user__info-name">Abhinav</span>
+                                        <span class="user__info-icon">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu__icons">
+                        <button class="btn btn-icon mobile-menu__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="btn btn-icon mobile-menu__icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="btn btn-icon btn-menu mobile-menu__icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="search" id="search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-4 col-md-4 col-12 vertical-center-align">
+                            <h3 class="search-title">Courses</h3>
+                        </div>
+                        <div class="col col-lg-8 col-md-8 col-12">
+                            <div class="form-search">
+                                <input type="text" class="input-search" placeholder="Search your favourite course">
+                                <button class="btn btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="products" class="products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-2 col-md-2 col-12">
+                            <select class="form-select filter-text select" name="" id="">
+                                <option value="popular">Popular</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-8 col-md-8 col-12">
+                            <ul class="product-filter__items">
+                                <li class="product-filter__item">All</li>
+                                <li class="product-filter__item">Design</li>
+                                <li class="product-filter__item">Business</li>
+                                <li class="product-filter__item">Marketing</li>
+                                <li class="product-filter__item">Photography</li>
+                                <li class="product-filter__item">Music</li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-2 col-md-2 col-12 justify-end">
+                            <div class="filter-text">
+                                <span>
+                                    <svg fill="#6e688d" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http:/www.w3.org/2000/svg">
+                                        <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
+                                    </svg>
+                                </span>
+                                <span>Filter</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__wrapper">  
+                        <div class="row product-card">
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_aws.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_BA.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_data.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-lg-4 col-md-6 col-sm-12 mt-4">
+                                <div class="course">
+                                    <div class="course__top">
+                                        <div class="course__img">
+                                            <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                        </div>
+                                        <div class="course__info">
+                                            <div class="course__info-item course__info-feedback">
+                                                <span class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="info-text">4.5 (120)</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-eye">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </span>
+                                                <span class="info-text">28,500</span>
+                                            </div>
+                                            <div class="course__info-item course__info-view">
+                                                <span class="icon-right-circle">
+                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                </span>
+                                                <span class="info-text">36 lesion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="course__bottom">
+                                        <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                        <div class="course__detail">
+                                            <div class="avatar">
+                                                <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                                <span class="name">Nicole Brown</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-old">$99.99</span>
+                                                <span class="price-new">$49.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-8 col-md-12 col-12">
+                            <div class="about__content">
+                                <div class="about__info">
+                                    <span class="about__title">Know about learning learning platform</span>
+                                    <div class="about__detail">
+                                        <ul class="about__detail-items">
+                                            <li class="about__detail-item">
+                                                <span class="about__detail-icon">
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                </span>
+                                                <span class="about__detail-text">Free E-book, Video & Consolation</span>
+                                            </li>
+                                            <li class="about__detail-item">
+                                                <span class="about__detail-icon">
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                </span>
+                                                <span class="about__detail-text">Top instructors from around world</span>
+                                            </li>
+                                            <li class="about__detail-item">
+                                                <span class="about__detail-icon">
+                                                    <i class="fa-regular fa-square-check"></i>
+                                                </span>
+                                                <span class="about__detail-text">Top courses for your team</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-start">Start learning now</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="about__img">
+                        <img src="./assets/images/about/about.jpg" alt=""/>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <div class="container">
+                    <div class="features__header">
+                        <div class="row">
+                            <div class="col col-lg-6 col-md-6 col-12">
+                                <h3 class="features-title">Recommended For you</h3>
+                            </div>
+                            <div class="col col-lg-6 col-md-6 col-12">
+                                <div class="features__view">
+                                    <select class="category" name="category" id="">
+                                        <option value="">Design</option>
+                                    </select>
+                                    <button class="btn btn-view-all">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="cards js-cards">
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_aws.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_BA.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_data.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course">
+                                <div class="course__top">
+                                    <div class="course__img">
+                                        <img src="./assets/images/courses/course_BE.jpg" alt="">
+                                    </div>
+                                    <div class="course__info">
+                                        <div class="course__info-item course__info-feedback">
+                                            <span class="icon-star">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="info-text">4.5 (120)</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-eye">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </span>
+                                            <span class="info-text">28,500</span>
+                                        </div>
+                                        <div class="course__info-item course__info-view">
+                                            <span class="icon-right-circle">
+                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                            </span>
+                                            <span class="info-text">36 lesion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="course__bottom">
+                                    <h3 class="course__title">Everything You Need to Know About Business</h3>
+                                    <div class="course__detail">
+                                        <div class="avatar">
+                                            <img src="./assets/images/courses/card-avatar.jpg" alt=""/>
+                                            <span class="name">Nicole Brown</span>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price-old">$99.99</span>
+                                            <span class="price-new">$49.65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <button class="btn btn-direction js-btn-prev">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <div class="progress js-progress">
+                                <div class="progress__bar js-progress__bar"></div>
+                            </div>
+                            <button class="btn btn-direction js-btn-next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="blog" id="blog">
+                <div class="container">
+                    <div class="blog__header">
+                        <div class="row">
+                            <div class="col col-lg-8 col-md-8 col-12">
+                                <h3 class="title">Class Taught by Real Creators</h3>
+                            </div>
+                            <div class="col col-lg-4 col-md-4 col-12">
+                                <div class="btn-wrapper">
+                                    <button class="btn btn-view-all">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__info">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-green">
+                                        <img src="./assets/images/teachers/yamilet.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-purple">
+                                        <img src="./assets/images/teachers/demetri.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-orange">
+                                        <img src="./assets/images/teachers/kiyan.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-yellow">
+                                        <img src="./assets/images/teachers/yamilet.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-red">
+                                        <img src="./assets/images/teachers/nikky.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="teacher__card">
+                                    <div class="teacher__img box-grey">
+                                        <img src="./assets/images/teachers/yamilet.png" alt="">
+                                    </div>
+                                    <div class="teacher__text">
+                                        <h3 class="name">Yamilet Booker</h3>
+                                        <p class="intro">
+                                            Learn Adobe illustrator CC graphic design, 
+                                            logo design, and more with this in-depth,
+                                            practical, easy-to-follow course!
+        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <div class="container note__container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <div class="note__content">
+                                        <p class="note-text">
+                                            I believe in lifelong learning
+                                            <br>
+                                            and Skillfy is a great place 
+                                            <br>
+                                            to learn from experts. I've 
+                                            <br>
+                                            learned a lot and  recommended 
+                                            <br>
+                                            it to all my friends.
+                                        </p>
+                                        <span class="name">Riaz Surti|Hearthy Foods</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <div class="note__img">
+                                        <img src="./assets/images/courses/note.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers" id="offer">
+                <div class="container">
+                    <div class="offers__header">
+                        <div class="row">
+                            <div class="col col-lg-8 col-md-8 col-12">
+                                <h3 class="title">To Education offers and deals are listed here</h3>
+                            </div>
+                            <div class="col col-lg-4 col-md-4 col-12">
+                                <div class="btn-wrapper">
+                                    <button class="btn btn-view-all">View all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="cards js-cards px-5">
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Up to 58% off</p>
+                                        <p class="text-description">Get 12-Month Subscription</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/yamilet.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-brown">
+                                    <p class="title">Total Discount</p>
+                                    <p class="number-percent">50%</p>
+                                </div>
+                            </div>
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Productivity Course a</p>
+                                        <p class="text-description">The Complete Personal</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/arav.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-blue">
+                                    <p class="title">Up To 58% Off</p>
+                                    <p class="number-percent">58%</p>
+                                </div>
+                            </div>
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Pass above Rs 250</p>
+                                        <p class="text-description">Avail 10% off on Testbook</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/demetri.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-red">
+                                    <p class="title">Total Discount</p>
+                                    <p class="number-percent">10%</p>
+                                </div>
+                            </div>
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Up to 58% off</p>
+                                        <p class="text-description">Get 12-Month Subscription</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/yamilet.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-brown">
+                                    <p class="title">Total Discount</p>
+                                    <p class="number-percent">50%</p>
+                                </div>
+                            </div>
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Productivity Course a</p>
+                                        <p class="text-description">The Complete Personal</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/arav.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-blue">
+                                    <p class="title">Up To 58% Off</p>
+                                    <p class="number-percent">58%</p>
+                                </div>
+                            </div>
+                            <div class="deal">
+                                <div class="deal__content">
+                                    <div class="deal__info">
+                                        <p class="text-title">Pass above Rs 250</p>
+                                        <p class="text-description">Avail 10% off on Testbook</p>
+                                    </div>
+                                    <div class="deal__img">
+                                        <img src="./assets/images/teachers/demetri.png" alt="">
+                                    </div>
+                                    <div class="shape">
+                                        <div class="shape__svg">
+                                            <svg xmlns="http:/www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                                <path fill="#f5ecef" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,112C840,64,960,32,1080,58.7C1200,85,1320,171,1380,213.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
+                                <div class="total-count bg-red">
+                                    <p class="title">Total Discount</p>
+                                    <p class="number-percent">10%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <button class="btn btn-direction js-btn-prev">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <div class="progress">
+                                <div class="progress__bar js-progress__bar"></div>
+                            </div>
+                            <button class="btn btn-direction js-btn-next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <div class="footer__wrapper">
+                            <h3 class="footer-title">Company</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">About</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Careers</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Pross</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Blog</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Affliates</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <div class="footer__wrapper">
+                            <h3 class="footer-title">Community</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Go Premium</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Team Plans</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Refer a Friend</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Gift Cards</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Scholarships</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Free Classes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <div class="footer__wrapper">
+                            <h3 class="footer-title">Teaching</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Become a</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Teacher</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Teaching</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Academy</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Handbook</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 col-12">
+                        <div class="footer__wrapper">
+                            <h3 class="footer-title">Support</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Support</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Contact us</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">System Requirements</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Register Activation</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Key</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__item-link">Site feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-12 divider"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-lg-8 col-md-8 col-12">
+                        <div class="slogan">
+                            <p>
+                                © 2015-2020 Skillfy Education Private limited All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-4 col-12">
+                        <div class="social">
+                            <a href="#" class="social__item">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social__item">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social__item">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#" class="social__item">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </footer>
+
+        <div class="modal-menu">
+            <div class="modal-menu__wrapper">
+                <div class="modal-menu__header">
+                    <span class="header-title">MENU</span>
+                    <button class="btn btn-icon btn-close"></button>
+                </div>
+                <div class="modal-menu__body">
+                    <nav class="nav">
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Home</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Pages</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Courses</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Features</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Blog</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Stop</a>
+                                <span class="nav__item-icon">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="modal-menu__backdrop"></div>
+        </div>
+        
+    </div>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

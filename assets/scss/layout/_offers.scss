@@ -1,0 +1,66 @@
+.offers {
+    background-color: $main-bg;
+    &__header {
+        margin-bottom: 32px;
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: end;
+            .btn-view-all {
+                &:hover {
+                    background-color: $bg-btn;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .btn-direction {
+            background-color: $white;
+            color: $name-color;
+        }
+
+        .progress {
+            width: 100%;
+            height: 5px;
+            margin: 0 8px;
+            &__bar {
+                width: 30%;
+                background-color: $bg-progress;
+            }
+        }
+    }
+
+    @media (max-width: $desktop) {
+        &__header {
+            .title {
+                font-size: 24px;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    //mobile
+    @media (max-width: $tablet) {
+        &__header {
+            .title {
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            .btn-wrapper {
+                justify-content: center;
+            }
+        }
+    }
+}

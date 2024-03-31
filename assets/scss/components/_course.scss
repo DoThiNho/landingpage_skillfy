@@ -1,0 +1,91 @@
+.course {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-width: $min-width-course;
+    background-color: $white;
+
+    &__top {
+        padding: 16px;
+        .course__img {
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    
+        .course__info {
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .info-text {
+                    color: var(--text-color);
+                }
+
+                .icon-star {
+                    color: #f4bd55;
+                }
+
+                .icon-eye {
+                    color: #dc4a01;
+                }
+
+                .icon-right-circle {
+                    color: #83ba9d;
+                }
+                
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 16px;
+
+        .course__title {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            padding-right: 32px;
+            font-weight: bold;
+        }
+
+        .course__detail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .avatar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                img {
+                    width: unset;
+                }
+            }
+
+            .price {
+                &-old {
+                    text-decoration: line-through;
+                    color: #d4d0dc;
+                    margin-right: 8px;
+                }
+                &-new {
+                    font-weight: bold;
+                    color: #e4821d;
+                }
+            }
+        }
+
+        @media (max-width: $tablet) {
+            .course__title {
+                padding: 0;
+            }
+        }
+    }
+}

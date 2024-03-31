@@ -1,0 +1,100 @@
+.modal-menu {   
+    visibility: hidden;
+    &__wrapper {
+        width: 400px;
+        height: 100%;
+        background-color: $white;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        padding: 16px;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-title {
+            font-weight: bold;
+        }
+    }
+
+    &__body {
+        .nav {
+            &__items {
+                display: block;
+                width: 100%;
+            }
+            &__item {
+                width: 100%;
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                &-link {
+                    color: $black;
+                }   
+                &-icon {
+                    cursor: pointer;
+                }
+                
+                &:hover, &:active {
+                    .nav__item-link {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__backdrop {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: $black;
+        opacity: .5;
+    }
+}
+
+.show {
+    visibility: visible;
+}
+
+.fade {
+    visibility: hidden;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.5s ease-in-out;
+}
+
+.fade-out-right {
+    animation: fadeOutRight 0.5s ease-in-out;
+  }
+  
+@keyframes fadeInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }

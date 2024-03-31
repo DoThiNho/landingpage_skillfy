@@ -1,0 +1,45 @@
+.features {
+    background-color: $main-bg;
+
+    &__header {
+        .features-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 24px;
+        }
+
+        .features__view {
+            display: flex;
+            justify-content: end;
+            gap: 16px;
+            margin: 16px 0;
+
+            .category {
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+
+            .btn-view-all {
+                &:hover {
+                    background-color: $bg-btn;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .courses {
+        margin-top: 16px;
+    }
+    @media (max-width: $tablet){
+        &__header {
+            .features-title {
+                text-align: center;
+            }
+            .features__view {
+                justify-content: center;
+            }
+        }
+    }
+}

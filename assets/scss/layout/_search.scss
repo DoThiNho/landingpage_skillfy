@@ -1,0 +1,39 @@
+.search {
+    background-color: $main-bg;
+    padding: 128px 0 64px 0;
+
+    &-title {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .form-search {
+        display: flex;
+
+        .input-search {
+            border: none;
+            width: 100%;
+            padding: 16px;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .btn-search {
+            padding: 16px 32px;
+            font-size: 20px;
+            color: $white;
+            background-color: $bg-btn;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        .form-search {
+            margin-top: 16px;
+        }
+    }
+    
+}
