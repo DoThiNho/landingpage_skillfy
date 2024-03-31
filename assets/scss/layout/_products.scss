@@ -5,7 +5,6 @@
         align-items: center;
         gap: 16px;
         padding: 8px 24px;
-        margin: 0 auto;
         border: 1px solid $text-color;
         border-radius: 5px;
         color: $text-color;
@@ -41,6 +40,9 @@
     }
 
     @media (max-width: $tablet) {
+        .filter-text {
+            margin: 0 auto;
+        }
         .product-filter {
             &__item {
                 margin: 32px 0;

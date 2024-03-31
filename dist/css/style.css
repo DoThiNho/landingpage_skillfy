@@ -12040,7 +12040,7 @@ img {
 .nav__items {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
   align-items: center;
   gap: 42px;
   cursor: pointer;
@@ -12434,7 +12434,6 @@ img {
   align-items: center;
   gap: 16px;
   padding: 8px 24px;
-  margin: 0 auto;
   border: 1px solid #6e688d;
   border-radius: 5px;
   color: #6e688d;
@@ -12460,6 +12459,9 @@ img {
   margin-top: 24px;
 }
 @media (max-width: 768px) {
+  .products .filter-text {
+    margin: 0 auto;
+  }
   .products .product-filter__item {
     margin: 32px 0;
   }

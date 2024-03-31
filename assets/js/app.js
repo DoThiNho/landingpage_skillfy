@@ -3,11 +3,10 @@ function $(selector) {
 }
 
 //Declare variable
-const closeBtn = $(".btn-close")
-const menuBtn = $(".btn-menu")
-const modal = $(".modal-menu")
-const modalContent = $(".modal-menu__wrapper")
-
+const closeBtn = $(".js-btn-close")
+const menuBtn = $(".js-btn-menu")
+const modal = $(".js-modal-menu")
+const modalContent = $(".js-modal-menu__wrapper")
 
 const cardWrappers = document.querySelectorAll(".js-cards")
 const cardWrapper = document.querySelector(".js-cards")
@@ -16,24 +15,25 @@ const btnNexts = document.querySelectorAll('.js-btn-next');
 const progress = $('.js-progress');
 const progressBars = document.querySelectorAll('.js-progress__bar');
 
-const maxScrollLeft = cardWrapper.scrollWidth - cardWrapper.clientWidth
 const scrollAmount = cardWrapper.clientWidth
 
 //Function
-const handleSliderButtons = ({ index }) => {
-  if(cardWrappers[index].scrollLeft <= 0) {
-    btnPrevs[index].disabled = true
-  } else {
-    btnPrevs[index].disabled = false
-  }
-  if(cardWrapper.scrollLeft >= maxScrollLeft){
-    btnNexts[index].disabled = true
-  } else {
-    btnNexts[index].disabled = false
-  }
+const getMaxScrollLeft = () => {
+  const maxScrollLeft = cardWrapper.scrollWidth - cardWrapper.clientWidth
+  return maxScrollLeft
 }
 
+
+const handleSliderButtons = ({ index }) => {
+  const maxScrollLeft = getMaxScrollLeft()
+  const scrollLeft = cardWrappers[index].scrollLeft;
+  btnPrevs[index].disabled = scrollLeft <= 0;
+  btnNexts[index].disabled = scrollLeft >= maxScrollLeft;
+}
+
+
 const updateScrollPosition = ({ progressBar, cardWrapper }) => {
+  const maxScrollLeft = getMaxScrollLeft()
   const scrollPosition = cardWrapper.scrollLeft
   const thumbPosition = (scrollPosition / maxScrollLeft) * (progress.clientWidth - progressBar.offsetWidth)
   progressBar.style.left = `${thumbPosition}px`
