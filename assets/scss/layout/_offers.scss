@@ -1,11 +1,10 @@
 .offers {
     background-color: $main-bg;
-    &__header {
+    .offers__header {
         margin-bottom: 32px;
 
         .title {
-            font-size: 40px;
-            font-weight: 600;
+            @include section-header-title;
         }
 
         .btn-wrapper {
@@ -42,6 +41,7 @@
         }
     }
 
+    //Tablet
     @media (max-width: $desktop) {
         &__header {
             .title {

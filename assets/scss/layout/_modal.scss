@@ -1,6 +1,6 @@
 .modal-menu {   
     visibility: hidden;
-    &__wrapper {
+    .modal-menu__wrapper {
         width: 400px;
         height: 100%;
         background-color: $white;
@@ -11,7 +11,7 @@
         padding: 16px;
     }
 
-    &__header {
+    .modal-menu__header {
         width: 100%;
         display: flex;
         align-items: center;
@@ -22,27 +22,28 @@
         }
     }
 
-    &__body {
+    .modal-menu__body {
         .nav {
-            &__items {
+            .nav__items {
                 display: block;
                 width: 100%;
-            }
-            &__item {
-                width: 100%;
-                margin-top: 32px;
-                display: flex;
-                justify-content: space-between;
-                &-link {
-                    color: $black;
-                }   
-                &-icon {
-                    cursor: pointer;
-                }
-                
-                &:hover, &:active {
+
+                .nav__item {
+                    width: 100%;
+                    margin-top: 32px;
+                    display: flex;
+                    justify-content: space-between;
                     .nav__item-link {
-                        color: $text-color;
+                        color: $black;
+                    }   
+                    .nav__item-icon {
+                        cursor: pointer;
+                    }
+                    
+                    .nav__item:hover, .nav__item:active {
+                        .nav__item-link {
+                            color: $text-color;
+                        }
                     }
                 }
             }

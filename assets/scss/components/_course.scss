@@ -3,7 +3,7 @@
     min-width: $min-width-course;
     background-color: $white;
 
-    &__top {
+    .course__top {
         padding: 16px;
         .course__img {
             img {
@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-between;
 
-            &-item {
+            .course__info-item {
                 display: flex;
                 align-items: center;
                 gap: 8px;
@@ -42,7 +42,7 @@
         }
     }
 
-    &__bottom {
+    .course__bottom {
         padding: 16px;
 
         .course__title {

@@ -11,7 +11,7 @@
     <div id="main">
         <!-- header -->
         <header class="header" id="header">
-            <div class="container header__container">
+            <div class="container header__wrapper">
                 <div class="header__logo">
                     <img class="header__logo-image" src="./assets/images/header/logo.jpg" alt="" />
                     <span class="header__logo-title">Skillfy</span>
@@ -114,13 +114,13 @@
             <section id="products" class="products">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-lg-2 col-md-2 col-12">
-                            <select class="form-select filter-text select" name="" id="">
+                        <div class="col col-lg-2 col-md-3 col-12">
+                            <select class="form-select filter-text" name="" id="">
                                 <option value="popular">Popular</option>
                             </select>
                         </div>
-                        <div class="col col-lg-8 col-md-8 col-12">
-                            <ul class="product-filter__items">
+                        <div class="select-filter col col-lg-8 col-md-6 col-12">
+                            <ul class="product-filter__items d-lg-flex d-none">
                                 <li class="product-filter__item">All</li>
                                 <li class="product-filter__item">Design</li>
                                 <li class="product-filter__item">Business</li>
@@ -128,9 +128,17 @@
                                 <li class="product-filter__item">Photography</li>
                                 <li class="product-filter__item">Music</li>
                             </ul>
+                            <select class="form-select filter-text d-lg-none d-block" name="" id="">
+                                <option value="popular">All</option>
+                                <option value="design">Design</option>
+                                <option value="business">Business</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="photography">Photography</option>
+                                <option value="music">Music</option>
+                            </select>
                         </div>
-                        <div class="col col-lg-2 col-md-2 col-12 justify-end">
-                            <div class="filter-text">
+                        <div class="col col-lg-2 col-md-3 col-12">
+                            <div class="filter-text action-filter">
                                 <span>
                                     <svg fill="#6e688d" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http:/www.w3.org/2000/svg">
                                         <path d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM24 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM19 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"></path>
@@ -163,7 +171,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -206,7 +214,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -249,7 +257,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -292,7 +300,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -335,7 +343,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -378,7 +386,7 @@
                                             </div>
                                             <div class="course__info-item course__info-view">
                                                 <span class="icon-right-circle">
-                                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
                                                 </span>
                                                 <span class="info-text">36 lesion</span>
                                             </div>
@@ -484,7 +492,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -525,7 +533,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -566,7 +574,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -607,7 +615,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -648,7 +656,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -689,7 +697,7 @@
                                         </div>
                                         <div class="course__info-item course__info-view">
                                             <span class="icon-right-circle">
-                                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                                <i class="fa-regular fa-circle-play"></i>
                                             </span>
                                             <span class="info-text">36 lesion</span>
                                         </div>
@@ -842,7 +850,7 @@
                     </div>
 
                     <div class="note">
-                        <div class="container note__container">
+                        <div class="container note__wrapper">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-12">
                                     <div class="note__content">
@@ -863,8 +871,11 @@
                                 <div class="col-lg-6 col-md-12 col-12">
                                     <div class="note__img">
                                         <img src="./assets/images/courses/note.jpg" alt="">
+                                        <div class="note__icon">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>
                                     </div>
-                                </div>
+                                    </div>
                             </div>
                             
                             

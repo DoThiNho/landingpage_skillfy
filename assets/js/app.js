@@ -16,6 +16,7 @@ const progress = $('.js-progress');
 const progressBars = document.querySelectorAll('.js-progress__bar');
 
 const scrollAmount = cardWrapper.clientWidth
+const cardGap = 28 // Distance between two card
 
 //Function
 const getMaxScrollLeft = () => {
@@ -61,12 +62,12 @@ cardWrappers.forEach(((cardWrapper, index) => {
 
 btnPrevs.forEach((btnPrev, index) => {
   btnPrev.addEventListener("click", () => {
-    cardWrappers[index].scrollBy({ left: -scrollAmount, behavior: "smooth" })
+    cardWrappers[index].scrollBy({ left: -scrollAmount - cardGap, behavior: "smooth" })
   })
 })
 
 btnNexts.forEach((btnNext, index) => {
   btnNext.addEventListener("click", () => {
-    cardWrappers[index].scrollBy({ left: scrollAmount, behavior: "smooth" })
+    cardWrappers[index].scrollBy({ left: scrollAmount + cardGap, behavior: "smooth" })
   })
 })

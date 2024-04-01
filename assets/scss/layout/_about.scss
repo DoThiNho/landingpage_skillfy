@@ -1,7 +1,7 @@
 .about {
     padding-top: 0;
     
-    &__content {
+    .about__content {
         display: flex;
         align-items: center;
         background-color: $bg-section-text;
@@ -41,7 +41,7 @@
         }
     }
 
-    &__img {
+    .about__img {
         position: absolute;
         right: 0;
         top: 50%;
@@ -54,7 +54,7 @@
 
     // mobile & tablet
     @media (max-width: $desktop) {
-        &__content {
+        .about__content {
             height: 400px;
             padding: 32px;
             .about__info {
@@ -66,7 +66,7 @@
             }
         }
 
-        &__img {
+        .about__img {
             position: relative;
             width: 100%;
             transform: none;

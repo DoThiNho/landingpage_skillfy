@@ -1,8 +1,7 @@
 .blog {
-    &__header {
+    .blog__header {
         .title {
-            font-size: 32px;
-            font-weight: 600;
+            @include section-header-title;
             margin-top: 16px;
         }
 
@@ -21,12 +20,12 @@
     .note {
         padding-top: 64px;
     
-        &__container {
+        .note__wrapper {
             background-color: $bg-section-text;
             padding: 64px;
         }
     
-        &__content {
+        .note__content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -39,12 +38,27 @@
                 font-style: italic;
             }
         }
+
+        .note__img {
+            position: relative;
+            .note__icon {
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+                padding: 18px 24px;
+                background-color: $white;
+                border-radius: 50%;
+                font-size: 18px;
+                color: $icon-play-video;
+                cursor: pointer;
+            }
+        }
     }
 
     //tablet and mobile
     @media (max-width: $desktop) {
         .note {
-            &__img {
+            .note__img {
                 margin-top: 32px;
             }
         }
@@ -52,7 +66,7 @@
 
     //mobile
     @media (max-width: $tablet) {
-        &__header {
+        .blog__header {
             .title {
                 font-size: 24px;
                 text-align: center;
@@ -63,7 +77,7 @@
             }
         }
         .note {
-            &__content {
+            .note__content {
                 .note-text {
                     font-size: 18px;
                 }
